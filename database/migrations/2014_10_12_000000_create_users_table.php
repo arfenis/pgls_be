@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('summ_name');
             $table->date('fecha_nacimiento');
             $table->string('user_identification');
-            $table->integre('position');
+            $table->integer('position');
             $table->string('team_name');
             $table->rememberToken();
             $table->timestamps();
