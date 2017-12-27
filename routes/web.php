@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+Route::get('/', 'PagesController@index');
+Route::get('/admin', 'PagesController@adminpage');
 
 Auth::routes();
 
